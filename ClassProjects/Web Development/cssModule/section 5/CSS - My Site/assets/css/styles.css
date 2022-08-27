@@ -21,3 +21,16 @@ h1 {
     height: 200px;
     background-color: brown;
 }
+
+.display {
+    display: inline;
+}
+
+.display::after {
+    clear: both;
+    display: block;
+}
+
+#pro {
+    text-decoration: underline;
+}
