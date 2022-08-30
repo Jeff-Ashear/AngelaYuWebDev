@@ -1,0 +1,52 @@
+/* This document is the repository of notes for the class */
+
+/* Section 5 */
+    /* 44. Box Model */
+
+        #boxModel-1 {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+        }
+        
+        #boxModel-2 {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: solid 50px;
+        }
+        
+        #boxModel-3 {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: solid 50px;
+            padding: 20px;
+        }
+        
+        #boxModel-4 {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: solid 50px;
+            padding: 20px;
+            margin: 30px;
+        }
+        
+        #boxModel-5 {
+            width: 500px;
+            height: 30px;
+            background-color: aqua;           
+        }
+
+    /* Challenge 44 */
+        #topDiv {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+        #bottomDiv {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }

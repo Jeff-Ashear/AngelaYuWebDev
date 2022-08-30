@@ -1,13 +1,28 @@
 body {
     margin: 0;
+    text-align: center;
 }
 
 h1 {
     margin-top: 0;
 }
 
+
 .topDiv {
    background-color: blanchedalmond;
+   padding-top: 100px;
+   position: relative;
+}
+
+#topCloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+#bottomCloud {
+    position: absolute;
+
 }
 
 .middleDiv {
