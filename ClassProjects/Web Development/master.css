@@ -1,3 +1,9 @@
+/* general page styling css */
+
+.nav-item {
+    padding-left: 8px;
+}
+
 /* This document is the repository of notes for the class */
 
 /* Section 5 */
@@ -50,3 +56,8 @@
             width: 200px;
             background-color: blue;
         }
+
+        /* lesson 45 */
+            .pro1 {
+                text-decoration: underline;
+            }
