@@ -61,3 +61,27 @@
             .pro1 {
                 text-decoration: underline;
             }
+            .blockRed {
+                background-color: red;
+            }
+            .inlineBlue {
+                background-color: blue;
+            }
+            .blockGreen {
+                background-color: green;
+                display: inline-block;
+                width: 200px;
+            }
+            .inlineOrange {
+                background-color: orange;
+                display: inline-block;
+                width: 100px;
+            }
+            #displayNone {
+                display: none;
+            }
+            #visiblityHidden {
+                visibility: hidden;
+            }
+        
+        /* lesson 47: CSS Statci and Relative Positioning */

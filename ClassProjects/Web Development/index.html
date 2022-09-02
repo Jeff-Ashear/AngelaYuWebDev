@@ -41,7 +41,7 @@
                             <li><a href="#lesson44" class="dropdown-item">44: The Box Model</a></li>
                             <li><a href="#challenge44" class="dropdown-item">Lesson 44: Challenge</a></li>
                             <li><a href="#lesson45" class="dropdown-item">45: CSS Display Property</a></li>
-                            <li><a href="" class="dropdown-item"></a></li>
+                            <li><a href="#lesson47" class="dropdown-item">47: CSS Static and Relative Positioning</a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                             <li><a href="" class="dropdown-item"></a></li>
@@ -129,7 +129,35 @@
 
                     <!-- Common In-line elements include <span>, <img>, and <a>. -->
                     
-                    <!-- be sure to take notes for the hello world example too -->
+                    <!-- Notice how the <p> elements (which are block elements) take up the whole line while the <span> elementts (inline) take up only the width of the content.  Notice also that you can't change the width of the inline elements, but you can with the block elements. -->
+                    <div>
+                        <p style="width: 100px;" class="blockRed">Hello</p>
+                        <p class="blockRed">World</p>
+                        <span class="inlineBlue" style="width: 300px;">Hello</span>
+                        <span class="inlineBlue">World</span>
+                        <span class="inlineBlue">Hello</span>
+                        <span class="inlineBlue">World</span>
+                    </div>
+                    <!-- If you need an element to occupy the same line with other elements, AND you need to set the width, change the Display Property to Inline-Block. See master.css for details.-->
+                    <div>
+                        <p class="blockGreen">Hello</p>
+                        <p class="blockGreen">World</p>
+                        <span class="inlineOrange">Hello</span>
+                        <span class="inlineOrange">World</span>
+                    </div>
+                    <!-- You can use Display: None to completely hide an element in the DOM.  It remains in the html, but is not displayed in any way.  You can use the property Visibility: hidden to keep the element hidden, but it will leave the space in the flow it would otherwise occupy. -->
+                    <div>
+                        <!-- The element below leaves no trace in the DOM. -->
+                        <p id="displayNone" class="blockGreen">Hello</p>
+                        <p class="blockGreen">World</p>
+                        <!-- This element however leaves it's space in DOM although you can't see it. -->
+                        <span id="visiblityHidden" class="inlineOrange">Hello</span>
+                        <span class="inlineOrange">World</span>
+                    </div>
+
+            </div><hr><br>
+            <div id="lesson47">
+                <h1>47: CSS Static and Relative Positioning</h1>
             </div>
 
 
