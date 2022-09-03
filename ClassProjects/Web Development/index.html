@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./master.css">
 </head>
 
 <body>
-    <nav class="navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar-dark navbar-expand-lg bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Table of Contents</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -23,9 +24,11 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="buton" data-bs-toggle="dropdown" aria-expanded="false">Class Projects</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="buton" data-bs-toggle="dropdown"
+                            aria-expanded="false">Class Projects</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./cssModule/section 5/CSS - My Site/index.html" class="dropdown-item" target="_blank ">CSS Site</a></li>
+                            <li><a href="./cssModule/section 5/CSS - My Site/index.html" class="dropdown-item"
+                                    target="_blank ">CSS Site</a></li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -41,15 +44,16 @@
                             <li><a href="#lesson44" class="dropdown-item">44: The Box Model</a></li>
                             <li><a href="#challenge44" class="dropdown-item">Lesson 44: Challenge</a></li>
                             <li><a href="#lesson45" class="dropdown-item">45: CSS Display Property</a></li>
-                            <li><a href="#lesson47" class="dropdown-item">47: CSS Static and Relative Positioning</a></li>
-                            <li><a href="" class="dropdown-item"></a></li>
+                            <li><a href="#lesson47" class="dropdown-item">47: CSS Static and Relative Positioning</a>
+                            </li>
+                            <li><a href="#lesson48" class="dropdown-item">48: CSS Absolute Positioning</a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                         </ul>
-                        
+
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
@@ -57,7 +61,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                           Section 6
+                            Section 6
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -69,7 +73,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Section 5 -->
     <div id="section5">
         <h1>section 5</h1>
@@ -79,20 +83,22 @@
             <!-- to demonstrate how to do the Box Model Math width is used below, but it's the same for height.  You can see a little interactive diagram of the Box Model in the Chrome developer tools in the inspector. You can change values right on the diagram. -->
             <!-- below is a div to explain the box model.  Changing the height or the width would increase the size of the BOX, pushing any additional content out of the way.  css file makes this div 300px by 300px-->
             <div id="boxModel-1"></div>
-        
+
             <!--  Adding a border will add the specified border width to the outside of the div, without changing the width of the blue area. Therefore the total width will be border-left + div + border-right.  The box2 div is 50 + 300 + 50 = 400px wide.-->
             <div id="boxModel-2"></div>
-        
+
             <!--  Padding adds space between the content and the border.  box3 has content as well as padding.  So now the width is calculated: border-left + padding-left + content(dimensions generated by box 3 width: 300px;) + padding-right + border-right; or 50 + 20 + 300 + 20 + 50 = 440px. -->
-            <div id="boxModel-3">Hello world, Hello world, Hello world, Hello world, Hello world, Hello world, Hello world,
+            <div id="boxModel-3">Hello world, Hello world, Hello world, Hello world, Hello world, Hello world, Hello
+                world,
                 Hello world, Hello world, </div>
             <!-- the fourth and final value of the box model is margin.  Margin is space between the outside of the border and any other element.  Adding margin, the width would then be calcutlated: margin-left + border-left + padding-left + content dimensions (box4 width) + padding-right + border right + margin-right.  In this case: 30 + 50 + 20 + 300 +20 + 50 + 30 = 500px -->
             <div id="boxModel-4"></div>
-        
+
             <!-- to compare boxmodel-5 has a static width of 500px with no other modifications to its Box Model. -->
             <div id="boxModel-5"></div>
         </div>
-        <br><hr>
+        <br>
+        <hr>
         <div id="challenge44">
             <h2 class="heading">Challenge 44</h2>
             <!-- challenge44 -->
@@ -100,64 +106,66 @@
                 <div id="topDiv"></div>
                 <div id="bottomDiv"></div>
             </div>
-        </div><hr><br>
+        </div>
+        <hr><br>
 
-        <!-- lesson 45. CSS Display Property -->
+        <div id="lesson45">
+            <!-- lesson 45. CSS Display Property -->
             <!-- The Display Property has 4 possible values: Block, In-line, Static(the default html value, except for specific html elements), and none. -->
-                <!-- Block causes content to occupy it's own line. -->
-                <!-- In-line elements occupy only the width of their contents, and a Width Property cannot be applied to them.  -->
-                <!-- In-line Block:  inline-block allows you to set the Width Property, but also allows the element to share it's line with another in-line element.  -->
-                <!-- Display: None; will completely remove the element from the display, but not from the html.  It's a good way to hide something on your web page. -->
+            <!-- Block causes content to occupy it's own line. -->
+            <!-- In-line elements occupy only the width of their contents, and a Width Property cannot be applied to them.  -->
+            <!-- In-line Block:  inline-block allows you to set the Width Property, but also allows the element to share it's line with another in-line element.  -->
+            <!-- Display: None; will completely remove the element from the display, but not from the html.  It's a good way to hide something on your web page. -->
             <!-- Initial content  -->
-            <div id="lesson45">
-                <h1>45: CSS Display Property</h1>
-                <div id="rough">
-                    <h1>I'm Jeff</h1>
-                    <p>a programmer.</p>
-                </div>
-                <div>
-                    <h1>I'm Jeff</h1>
-                    <p>a </p>
-                    <p class="pro1">pro</p>
-                    <p>grammer.</p>
-                </div>
-                <!-- if I want to underline the "pro" in programmer using <p> would create a new block element.  <span> would allow me to style only those three letters within the same block.-->
-                    <div id="solved">
-                        <h1>I'm Jeff</h1>
-                        <p>a <span class="pro1">pro</span>grammer.</p>
-                    </div>
+            <h1>45: CSS Display Property</h1>
+            <div id="rough">
+                <h1>I'm Jeff</h1>
+                <p>a programmer.</p>
+            </div>
+            <div>
+                <h1>I'm Jeff</h1>
+                <p>a </p>
+                <p class="pro1">pro</p>
+                <p>grammer.</p>
+            </div>
+            <!-- if I want to underline the "pro" in programmer using <p> would create a new block element.  <span> would allow me to style only those three letters within the same block.-->
+            <div id="solved">
+                <h1>I'm Jeff</h1>
+                <p>a <span class="pro1">pro</span>grammer.</p>
+            </div>
 
-                    <!-- Common In-line elements include <span>, <img>, and <a>. -->
-                    
-                    <!-- Notice how the <p> elements (which are block elements) take up the whole line while the <span> elementts (inline) take up only the width of the content.  Notice also that you can't change the width of the inline elements, but you can with the block elements. -->
-                    <div>
-                        <p style="width: 100px;" class="blockRed">Hello</p>
-                        <p class="blockRed">World</p>
-                        <span class="inlineBlue" style="width: 300px;">Hello</span>
-                        <span class="inlineBlue">World</span>
-                        <span class="inlineBlue">Hello</span>
-                        <span class="inlineBlue">World</span>
-                    </div>
-                    <!-- If you need an element to occupy the same line with other elements, AND you need to set the width, change the Display Property to Inline-Block. See master.css for details.-->
-                    <div>
-                        <p class="blockGreen">Hello</p>
-                        <p class="blockGreen">World</p>
-                        <span class="inlineOrange">Hello</span>
-                        <span class="inlineOrange">World</span>
-                    </div>
-                    <!-- You can use Display: None to completely hide an element in the DOM.  It remains in the html, but is not displayed in any way.  You can use the property Visibility: hidden to keep the element hidden, but it will leave the space in the flow it would otherwise occupy. -->
-                    <div>
-                        <!-- The element below leaves no trace in the DOM. -->
-                        <p id="displayNone" class="blockGreen">Hello</p>
-                        <p class="blockGreen">World</p>
-                        <!-- This element however leaves it's space in DOM although you can't see it. -->
-                        <span id="visiblityHidden" class="inlineOrange">Hello</span>
-                        <span class="inlineOrange">World</span>
-                    </div>
+            <!-- Common In-line elements include <span>, <img>, and <a>. -->
 
-            </div><hr><br>
-            <div id="lesson47">
-                <!-- CSS Positioning comes after the predefined rules of html.
+            <!-- Notice how the <p> elements (which are block elements) take up the whole line while the <span> elementts (inline) take up only the width of the content.  Notice also that you can't change the width of the inline elements, but you can with the block elements. -->
+            <div>
+                <p style="width: 100px;" class="blockRed">Hello</p>
+                <p class="blockRed">World</p>
+                <span class="inlineBlue" style="width: 300px;">Hello</span>
+                <span class="inlineBlue">World</span>
+                <span class="inlineBlue">Hello</span>
+                <span class="inlineBlue">World</span>
+            </div>
+            <!-- If you need an element to occupy the same line with other elements, AND you need to set the width, change the Display Property to Inline-Block. See master.css for details.-->
+            <div>
+                <p class="blockGreen">Hello</p>
+                <p class="blockGreen">World</p>
+                <span class="inlineOrange">Hello</span>
+                <span class="inlineOrange">World</span>
+            </div>
+            <!-- You can use Display: None to completely hide an element in the DOM.  It remains in the html, but is not displayed in any way.  You can use the property Visibility: hidden to keep the element hidden, but it will leave the space in the flow it would otherwise occupy. -->
+            <div>
+                <!-- The element below leaves no trace in the DOM. -->
+                <p id="displayNone" class="blockGreen">Hello</p>
+                <p class="blockGreen">World</p>
+                <!-- This element however leaves it's space in DOM although you can't see it. -->
+                <span id="visiblityHidden" class="inlineOrange">Hello</span>
+                <span class="inlineOrange">World</span>
+            </div>
+
+        </div>
+        <hr><br>
+        <div id="lesson47">
+            <!-- CSS Positioning comes after the predefined rules of html.
                     1. Content is everything.  Inline elements only take up as much space as the content.  Block elements' height is always determined first by the content.  
                     2. The order of the elments always comes from the code.
                     3. Children sit ontop of parents on the z axis.
@@ -169,17 +177,42 @@
                                 B. When we cahnge the coordinates we do so according to an edge and it behaves like adding a margin.  Because of this if you add a coordinate of left: 200px; it will add a left-side margin, pushing the element 200px to the right.
                             3. Absolute: (next Lesson)
                             4.  -->
-                <h1>47: CSS Static and Relative Positioning</h1>
-                <div>
-                    <h1 id="heading">I Love Bacon</h1>
+            <h1>47: CSS Static and Relative Positioning</h1>
+            <div>
+                <!-- <h1 id="heading">I Love Bacon</h1>
                     <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
                     <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
                     <p>bacon, bacon, bacon, bacon, bacon, bacon</p>
                     <img class="bacon" src="https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/118/bacon_1f953.png" alt="bacon-img">
-                    <!-- <img class="broccoli" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/broccoli_1f966.png" alt="broccoli-img"> -->
-                </div>
-            </div>
+                    <img class="broccoli" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/broccoli_1f966.png" alt="broccoli-img"> -->
 
+
+                <!-- The goal of the following exercise is to change the layout from vertical to horozontal, and to change the order from left to right to blue, yellow, red, using Position: Relative; and coordinates. -->
+                <div id="relativeRed"></div>
+                <div id="relativeBlue"></div>
+                <div id="relativeYellow"></div>
+            </div>
+        </div>
+        <hr><br>
+
+        <div id="lesson48">
+            <h1>48: Absolute Positioning</h1>
+            <!-- 3. Absolute Positioning.  This can be best understood in contrast with Relative positioning.  With Relative positioning, we are adding a margin relative to the element's default location.  With absolute positioning, we are adding a margin relative to the element's parent.  Often this is the body of the webpage, but it could also be a div or any other element. 
+                A.  Unlike relative positioning, Absolute Positioning removes the element effected by the default flow of the DOM.  Other Elements will be effected by setting the positioning to absolute.-->
+            <div class="absoluteContainer">
+                <div id="absoluteRed"></div>
+                <div id="absoluteBlue"></div>
+                <div id="absoluteYellow"></div>
+            </div><br>
+            <div class="absoluteContainer">
+                <div id="absoluteContainer1">
+                    <div id="absoluteRed1"></div>
+                </div>
+                <div id="absoluteBlue1"></div>
+                <div id="absoluteYellow1"></div>
+            </div>
+                
+        </div>
 
 
 

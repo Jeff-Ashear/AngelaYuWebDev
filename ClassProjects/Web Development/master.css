@@ -84,4 +84,89 @@
                 visibility: hidden;
             }
         
-        /* lesson 47: CSS Statci and Relative Positioning */
+        /* lesson 47: CSS Static and Relative Positioning */
+
+            
+            #relativeRed {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                display: inline-block;
+                position: relative;
+                left: 400px;
+            }
+            #relativeBlue {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                display: inline-block;
+                position: relative;
+                right: 200px;
+                
+            }
+            #relativeYellow {
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                display: inline-block;
+                position: relative;
+                right: 200px;
+            }
+
+        /* lesson 48: Absolute Positioning */
+
+        .absoluteContainer {
+            height: 600px;
+            position: relative;
+             margin: 0;
+        }    
+        #absoluteRed {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 400px;
+            left: 400px;
+        }
+        #absoluteBlue {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        #absoluteYellow {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .clearDiv {
+            position: static; 
+        }
+        #absoluteContainer1 {
+            position: relative;
+             margin: 0;
+             width: 600px;
+             height: 600px;
+             background-color: grey;
+        }    
+        #absoluteRed1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+        }
+        #absoluteBlue1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+           left: 200px;
+        }
+        #absoluteYellow1 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
