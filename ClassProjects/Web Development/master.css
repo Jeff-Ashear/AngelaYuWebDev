@@ -188,3 +188,16 @@
             background-color: blue;
             display: inline-block;
         }
+    /* Centering with margin:auto */
+        #centerMe2 {
+            margin: auto;
+        }
+        #myName {
+            margin: auto;
+        }
+        #beansName {
+            margin: auto;
+        }
+        #mammasName {
+            margin: auto;
+        }
