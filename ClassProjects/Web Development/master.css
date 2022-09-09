@@ -193,6 +193,7 @@
             text-align: center;
         }
         #myName {
+            font-family: 'Montserrat', sans-serif;
            /* Nothing to see here. */
         }
         #mammasName {
@@ -221,4 +222,21 @@
         }
         #font5 {
             font-family: 'Montserrat', sans-serif;
+        }
+
+    /* 53: CSS sizing */
+        .fontParent {
+            font-size: 2em;
+        }
+        #child0 {
+            font-size: 200%;
+        }
+        #child1 {
+            font-size: 4em;
+        }
+        #child2 {
+            font-size: 16px;
+        }
+        #child3 {
+            font-size: 4rem;
         }

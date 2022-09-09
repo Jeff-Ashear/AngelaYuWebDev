@@ -52,8 +52,8 @@
                             <li><a href="#lesson48" class="dropdown-item">48: CSS Absolute Positioning</a></li>
                             <li><a href="#lesson49" class="dropdown-item">49: Centering w CSS</a></li>
                             <li><a href="#lesson50" class="dropdown-item">50: Font Styling</a></li>
-                            <li><a href="" class="dropdown-item"></a></li>
-                            <li><a href="" class="dropdown-item"></a></li>
+                            <li><a href="#lesson52" class="dropdown-item">52: Adding Content to Our Website</a></li>
+                            <li><a href="#lesson53" class="dropdown-item">53: CSS Sizing</a></li>
                             <li><a href="" class="dropdown-item"></a></li>
                         </ul>
 
@@ -234,7 +234,7 @@
                 <!-- This one has a changed width, and is then recentered with margin: auto.-->
                 <div id="beansName"><h2>Wrenna Ashear</h2></div>
             </div>
-        </div>
+        </div><br><hr>
 
         <div id="lesson50">
             <h1>50: Font Styling our Personal Site</h1>
@@ -248,7 +248,64 @@
             <h4 id="font3">Here is an embedded font from <a href="https://fonts.google.com/">Google Fonts</a></h4>
             <h4 id="font4">And another.</h4>
             <h4 id="font5">...and yet another embedded font.</h4>
-        </div>
+        </div><br><hr>
+
+        <div id="lesson51">
+            <h1>52: Adding Content to Our <a href="./index.html">Website</a></h1>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Download the code</li>
+                <li>Plug it into the body of index.html</li>
+                <li>add images and alts
+                    <ul>
+                        <li>Profile pic</li>
+                        <li>skill section pics</li>
+                    </ul>
+                </li>
+                <li>Mailto button needs to work</li>
+                <li>The three links at the bottom have to work</li>
+                <li>Change the copyright</li>
+                <li>delet the code from middle-container and bottom-container in the css file</li>
+            </ol>
+            
+        </div><br><hr>
+
+        <div id="lesson53">
+            <h1>53: CSS Sizing</h1>
+                <h4>Styling Instructions:</h4>
+                <ol>
+                    <li>Set the h1 font size to 90px
+                        <ul>
+                            <li>setting it to 90px will not result in a dynamic fontsize</li>
+                            <li>In order to create a dynamic fontsize, we use a %age. Default 100% = 16px.</li>
+                            <li>We can also use the 'em' value for the fontsize property <ul>
+                                <li>In this case the 'em' is the pheonetic representation of the capital letter 'M'. So 1em = the width of 1 letter m. 1 em sized letter M = 16 px.</li>
+                            </ul></li>
+                        </ul>
+                    </li>
+                    <li>Because most people now use the zoom function on their browser instead of setting a defualt font size in the browser's settings this distinction between dynamic and static font sizes is less important than it used to be.</li>
+                    <li>What is important however is that font sizes are inherited <ul>
+                        <li>So if a parent has a font size of 2em, and a child has a font size of 5.5em, the child will display a font size of 7.5em as the inherited size is added to the declared size. <ul>
+                            <li>You can get around this by using the 'rem'</li>
+                            <li>it stands for 'root em'</li>
+                            <li>this will ignore any upstream font sizes and not inherit additive sizes from parents.</li>
+                        </ul></li>
+                        <li>This functions exactly the same way with percentages.</li>
+                        <li>This is not true with sizes declared in px becuase they are non-dynamic sizes</li>
+                    </ul></li>
+
+                    <h2>Here is an example:</h2>
+                    <div id="fontParent">
+                        <h1>I'm the font parent</h1>
+                            <h3 id="child0">We are all font children.</h3>
+                            <h3 id="child1">We are all font children.</h3>
+                            <h3 id="child2">We are all font children.</h3>
+                            <h3 id="child3">We are all font children.</h3>
+                    </div>
+
+                    <!-- challenge 53:  change the <p> on the site to <h3>, and set the size to the equivilent of 40px using the rem value.-->
+                </ol>
+        </div><br><hr>
 
 
 
