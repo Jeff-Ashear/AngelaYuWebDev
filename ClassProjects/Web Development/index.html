@@ -54,7 +54,7 @@
                             <li><a href="#lesson50" class="dropdown-item">50: Font Styling</a></li>
                             <li><a href="#lesson52" class="dropdown-item">52: Adding Content to Our Website</a></li>
                             <li><a href="#lesson53" class="dropdown-item">53: CSS Sizing</a></li>
-                            <li><a href="" class="dropdown-item"></a></li>
+                            <li><a href="#lesson58" class="dropdown-item">58: CSS Float and Clear</a></li>
                         </ul>
 
                     </li>
@@ -295,17 +295,61 @@
                     </ul></li>
 
                     <h2>Here is an example:</h2>
-                    <div id="fontParent">
+                    <div class="container" id="fontParent">
                         <h1>I'm the font parent</h1>
-                            <h3 id="child0">We are all font children.</h3>
-                            <h3 id="child1">We are all font children.</h3>
-                            <h3 id="child2">We are all font children.</h3>
-                            <h3 id="child3">We are all font children.</h3>
+                            <h3 class="fontChild" id="child0">We are all font children.</h3>
+                            <h3 class="child1">We are all font children.</h3>
+                            <h3 class="fontChild" id="child2">We are all font children.</h3>
+                            <h3 class="fontChild" id="child3">We are all font children.</h3>
                     </div>
 
                     <!-- challenge 53:  change the <p> on the site to <h3>, and set the size to the equivilent of 40px using the rem value.-->
                 </ol>
         </div><br><hr>
+        <div id="lesson58">
+            <h1>58: Float and Clear</h1>
+            <p>The challenge in this lesson is to make a the divs with a class of skill-row on the personal site equal to 50% of the width of the viewport.  I did it with:</p>
+            <ul>
+                <li>display: inline-block;</li>
+                <li>width: 50%;</li>
+                <li>text-align: center;</li>
+            </ul>
+            <p>It also worked with:</p>
+            <ul>
+                <li>width: 50%;</li>
+                <li>margin: 0 auto;</li>
+            </ul>
+            <p>It seemed to work.  Now to see what the teacher says!</p>
+            <p>So far so good.  Next step is creat a 100px margin top and bottom.  I'm going to change the 0 to 100 in margin: 0 auto;</p>
+            <p>Okay that worked too.  Then next task was to align the text left in each .skill-row.  I used text-align: left; in the same code block.</p>
+            <p>Still on track.  Now I am to double the line height in the p elements.  I'll use line-height: 2;</p>
+            <p>Okay last thing is to change the imgs in .skill-row to 25% of their original sizes. I'm going to create a class and the specify a width of 25%.</p>
+
+            <h2>Floating</h2>
+            <p>The real subject of this lesson is Float and Clear.  The next challenge for the css personal site is to wrap the text around the image in the skills section. and example follows here.</p>
+
+            <div class="madSkills">
+                <div class="skill-row0s">
+                    <img src="https://www.girlwiththepassport.com/wp-content/uploads/2021/02/Stetind-at-Sunrise.jpg" alt="Norway's Beauty" class="madImg">
+                    <h3>Mountains are so great.</h3>
+                    <p class="mtnLovin">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+                </div>
+                <div class="skill-row0s">
+                    <img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/43bd21b20e988a081070c7c45d8282233008a6c0/big-a19e802125cd31474a39e0c1d972b98d.jpg" alt="Fucking Norway man..." class="madImg1">
+                    <h3>Norway is redonk</h3>
+                    <p class="mtnLovin">I wish I wasn't too old to learn Norwegian.  I would move there if it was remotely feasable.  These pictures are doing me the f in.  I can't believe how beautiful it is.</p>
+                </div>
+            </div>
+            <br>
+            <p>The next challenge asks that I float the 2nd .skill-row image to the right.  I'll use an id instead of a class on each image and just reverse the directions of the original float and margin properties.  I'll add an example aboe as well.</p>
+            <p>Next I'm asked to clear the float on the p-elements, so they display back underneath the pics, but to leave the h3's untouched.  I'll use clear: left/right; respectively.  Clear can be thought of as the anti-float property.</p>
+            <p>Note: I did what I described above, and it worked.  I decided to try however using clear: both and to give earch p-element the same class.  That worked too and I like the solution better in this case.</p>
+            <h3>The instructor brings up an interesting point about floats here:</h3>
+            <p>She says that floats are to be used for wrapping text around a certain element, and only when it's really really necesary.  Float is not for layout.  Trying to use float as a layout tool creates a lot of problems.  A lot of people make that mistake.  Stick to the position properties, or margin and padding for layouts.</p>
+            
+
+        </div>
+        
 
 
 

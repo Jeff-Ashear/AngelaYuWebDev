@@ -58,3 +58,34 @@ h4 {
 #pro {
     text-decoration: underline;
 }
+
+/* .skill-row {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+} */
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-img0 {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-img1 {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+.comp-skill-text {
+    clear: left;
+}
+.code-skill-text {
+    clear: right;
+}
