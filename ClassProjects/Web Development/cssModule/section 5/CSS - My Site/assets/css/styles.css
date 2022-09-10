@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    margin-top: 50px auto 0 auto;
+    margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
     font-size: 5.26rem;
     color: #66BFBF;
@@ -25,8 +25,15 @@ h4 {
     font-family: 'Noto Sans', sans-serif;
 }
 
+hr {
+    border: 0;
+    width: 6%;
+    border-top: dotted 8px #EAF6F6; 
+    margin: 100px auto;
+}
+
 .top-container {
-   background-color: #363062;
+   background-color: #EAF6F6;
    padding-top: 100px;
    position: relative;
 }
@@ -39,12 +46,22 @@ h4 {
 
 #bottomCloud {
     position: absolute;
+    left: 150px;
+}
 
+#mountainImg {
+    width: 45%
 }
 
 #profilePic {
     width: 20vw;
     border-radius: 100%;
+    margin-top: 50px;
+}
+
+.profile {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .middle-container {
@@ -76,16 +93,12 @@ h4 {
     width: 25%;
     float: left;
     margin-right: 30px;
+    border-radius: 100%;
 }
 
 .skill-img1 {
     width: 25%;
     float: right;
     margin-left: 30px;
-}
-.comp-skill-text {
-    clear: left;
-}
-.code-skill-text {
-    clear: right;
+    border-radius: 100%;
 }
