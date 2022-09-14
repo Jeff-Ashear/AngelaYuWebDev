@@ -1,7 +1,8 @@
 body {
+    color: #40546e
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -30,6 +31,11 @@ hr {
     width: 6%;
     border-top: dotted 8px #EAF6F6; 
     margin: 100px auto;
+}
+
+#intro {
+    margin: auto;
+    width: 30%;
 }
 
 .top-container {
@@ -68,9 +74,6 @@ hr {
    
 }
 
-.bottom-container {
-  
-}
 
 #pro {
     text-decoration: underline;
@@ -103,6 +106,10 @@ hr {
     border-radius: 100%;
 }
 
+.skill-row::after {
+    clear: both;
+}
+
 .btn {
     background: #2bc4ad;
     background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -118,9 +125,10 @@ hr {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-  }
-  
-  .btn:hover {
+    margin: 50px;
+}
+
+.btn:hover {
     background: #3cb0fd;
     background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
@@ -128,4 +136,30 @@ hr {
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
-  }
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    height: 100px;
+    margin-top: 150px;
+    padding-top: 30px;
+}
+
+.footer-link {
+    color:#11999E;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #EAF6F6;
+    text-shadow: 2px 2px 5px #40546e;
+}
+
+#copyright {
+    color: #EAF6F6;
+    margin: 40px 0px 40px 0px;
+}
