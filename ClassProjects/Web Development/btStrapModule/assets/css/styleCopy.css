@@ -59,3 +59,12 @@ h1 {
 }
 
 /* Features Section */
+.featureCols {
+    margin: 5rem 18px;
+}
+.featureFA {
+    color: #ff4c68;
+    margin: 5rem 18px;
+
+    width: 50%;
+}
