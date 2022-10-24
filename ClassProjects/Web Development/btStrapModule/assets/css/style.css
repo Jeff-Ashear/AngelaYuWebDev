@@ -29,12 +29,12 @@ h1 {
 
 /* images */
 #iPhoneDog {
-    transform-origin: bottom left;
-    
-    transform: rotate(30deg);
-    max-height: 80vh;    
+    width: 60%; 
+
+    /* transform-origin: bottom left; */
+    transform: rotate(25deg);
 }
 
-#phoneDiv {
+/* #phoneDiv {
     overflow: clip;
-}
+} */
