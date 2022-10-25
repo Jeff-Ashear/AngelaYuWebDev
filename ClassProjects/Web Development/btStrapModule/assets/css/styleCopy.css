@@ -59,12 +59,27 @@ h1 {
 }
 
 /* Features Section */
-.featureCols {
-    margin: 5rem 18px;
+#features {
+    padding: 7% 15%;
 }
-.featureFA {
-    color: #ff4c68;
-    margin: 5rem 18px;
+.featureCols {
+    padding: 5%;
+}
 
-    width: 50%;
+.featureFA {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.featureFA:hover {
+    color: #ff4c68;
+}
+
+.featruesTitle {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.featuresTxt {
+    color: #8f8f8f;
 }
