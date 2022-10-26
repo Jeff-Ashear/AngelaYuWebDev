@@ -8,8 +8,11 @@
     <title>tindog</title>
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- bootstrap cdn -->
@@ -17,7 +20,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="./assets/css/styleCopy.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -46,17 +49,17 @@
                     </ul>
                 </div>
             </nav>
-    
+
             <!-- begin title card -->
             <div class="row">
                 <div class="col-lg-6">
                     <h1>Meet new and interesting dogs nearby.</h1>
                     <button class="btn btn-lg btn-dark downloadBtn" type="button">
-                        <i class="fa-brands fa-light fa-apple"></i> 
+                        <i class="fa-brands fa-light fa-apple"></i>
                         Download
                     </button>
                     <button class="btn btn-lg btn-outline-light downloadBtn" type="button">
-                        <i class="fa-brands fa-google-play"></i> 
+                        <i class="fa-brands fa-google-play"></i>
                         Download
                     </button>
                 </div>
@@ -95,9 +98,34 @@
 
     <section id="testimonials">
 
-        <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-        <img src="./assets/images/dog-img.jpg" alt="dog-profile">
-        <em>Pebbles, New York</em>
+        <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.
+                    </h2>
+                    <img class="testimonials-image" src="./assets/images/dog-img.jpg" alt="dog-profile">
+                    <em>Pebbles, New York</em>
+                </div>
+                <div class="carousel-item">
+                    <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the
+                        love of their life. I think.</h2>
+                    <img class="testimonials-image" src="./assets/images/lady-img.jpg" alt="lady-profile">
+                    <em>Beverly, Illinois</em>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+        <img class="testimonials-image" src="./assets/images/dog-img.jpg" alt="dog-profile">
+        <em>Pebbles, New York</em> -->
 
         <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
     <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
@@ -109,10 +137,11 @@
     <!-- Press -->
 
     <section id="press">
-        <img src="./assets/images/techcrunch.png" alt="tc-logo">
-        <img src="./assets/images/tnw.png" alt="tnw-logo">
-        <img src="./assets/images/bizinsider.png" alt="biz-insider-logo">
-        <img src="./assets/images/mashable.png" alt="mashable-logo">
+
+        <img class="press-logo" src="./assets/images/techcrunch.png" alt="tc-logo">
+        <img class="press-logo" src="./assets/images/tnw.png" alt="tnw-logo">
+        <img class="press-logo" src="./assets/images/bizinsider.png" alt="biz-insider-logo">
+        <img class="press-logo" src="./assets/images/mashable.png" alt="mashable-logo">
 
     </section>
 

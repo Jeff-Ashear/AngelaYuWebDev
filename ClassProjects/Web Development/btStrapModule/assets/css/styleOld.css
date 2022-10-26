@@ -1,0 +1,40 @@
+#title {
+    background-color: #ff4c68;
+    background-size: 200%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h1 {
+    color: white;
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.btn-lg {
+    margin: 1rem;
+}
+
+/* images */
+#iPhoneDog {
+    width: 60%; 
+
+    /* transform-origin: bottom left; */
+    transform: rotate(25deg);
+}
+
+/* #phoneDiv {
+    overflow: clip;
+} */
