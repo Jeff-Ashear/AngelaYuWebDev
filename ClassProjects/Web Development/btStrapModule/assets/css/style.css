@@ -122,8 +122,14 @@ h2 {
 /* pricing section */
 #pricing {
     text-align: center;
+    padding: 100px;
 }
 
 #pricingCards {
-    /* margin: 7% 15%; */
+    padding: 3% 2%;
+}
+
+.conversionBtn {
+    /* position: relative;
+    bottom: 0px; */
 }
