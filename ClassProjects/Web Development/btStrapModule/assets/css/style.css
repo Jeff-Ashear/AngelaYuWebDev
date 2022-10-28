@@ -48,20 +48,21 @@ h1 {
 
 /* title image */
 #iPhoneDog {
-    width: 60%;
-    /* transform-origin: top left; */
-    
+    width: 25% !important;
+    /* figure out why position absolute increases the size of the image */
     transform: rotate(25deg);
-}
-
-#iPhoneDog {
-    overflow: hidden;
+    position: relative;
+    position: absolute;
 }
 
 /* Features Section */
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
+
 .featureCols {
     padding: 5%;
 }
