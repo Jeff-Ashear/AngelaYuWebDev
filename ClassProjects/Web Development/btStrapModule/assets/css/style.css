@@ -59,7 +59,7 @@ h1 {
 }
 
 @media (max-width: 1028px) {
-    h1 {
+    #title {
         text-align: center;
     }
     
