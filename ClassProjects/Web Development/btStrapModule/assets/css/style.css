@@ -9,7 +9,7 @@ body {
 
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -47,12 +47,32 @@ h1 {
 }
 
 /* title image */
-#iPhoneDog {
-    width: 25% !important;
-    /* figure out why position absolute increases the size of the image */
-    transform: rotate(25deg);
+#iPhoneDiv {
     position: relative;
+    padding: 7%;
+}
+
+#iPhoneDog {
+    max-width: 60%;
+    transform: rotate(25deg);
     position: absolute;
+}
+
+@media (max-width: 1028px) {
+    h1 {
+        text-align: center;
+    }
+    
+    #iPhoneDiv {
+        position: static;
+    }
+
+    #iPhoneDog {
+        transform: rotate(0deg);
+        position: static;
+        margin-left: auto;
+    }
+
 }
 
 /* Features Section */
