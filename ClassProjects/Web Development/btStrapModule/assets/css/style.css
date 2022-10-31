@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 /* Headings */
@@ -19,16 +20,21 @@ p {
     color: #8f8f8f;
 }
 
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* title */
+
 #title {
     background-color: #ff4c68;
     color: #fff;
+    text-align: left;
 }
 
-
-.container-fluid {
+#title .container-fluid {
     padding: 3% 15% 7%;
 }
-
 
 /* Navigation bar */
 .navbar {
@@ -86,7 +92,6 @@ p {
 
 /* Features Section */
 #features {
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
     z-index: 1;
@@ -115,13 +120,8 @@ p {
 
 /* testimonials section */
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
-}
-
-.carousel-item {
-    padding: 7% 15%;
 }
 
 .testimonial-heading {
@@ -138,7 +138,6 @@ p {
 /* press section */
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -149,7 +148,6 @@ p {
 
 /* pricing section */
 #pricing {
-    text-align: center;
     padding: 100px;
 }
 
@@ -169,14 +167,12 @@ p {
 /* call to action */
 #cta {
     background-color: #ff4c68;
-    padding: 7% 15%;
-    text-align: center;
+    color: #fff;
 }
 
 /* footer */
 #footer {
     background-color: #fff;
-    text-align: center;
     padding-bottom: 1rem;
 }
 
