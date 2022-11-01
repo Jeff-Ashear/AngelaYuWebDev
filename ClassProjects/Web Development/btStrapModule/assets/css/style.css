@@ -24,16 +24,21 @@ p {
     padding: 7% 15%;
 }
 
-/* title */
-
-#title {
+/* sections */
+.colored-section {
     background-color: #ff4c68;
     color: #fff;
-    text-align: left;
 }
+
+.white-section {
+    background-color: #fff;
+}
+
+/* title */
 
 #title .container-fluid {
     padding: 3% 15% 7%;
+    text-align: left;
 }
 
 /* Navigation bar */
@@ -91,7 +96,6 @@ p {
 
 /* Features Section */
 #features {
-    background-color: #fff;
     position: relative;
     z-index: 1;
 }
@@ -121,7 +125,6 @@ p {
 /* testimonials section */
 #testimonials {
     background-color: #ef8172;
-    color: #fff;
 }
 
 .testimonial-heading {
@@ -137,7 +140,6 @@ p {
 
 /* press section */
 #press {
-    background-color: #ef8172;
     padding-bottom: 3%;
 }
 
@@ -165,10 +167,6 @@ p {
 }
 
 /* call to action */
-#cta {
-    background-color: #ff4c68;
-    color: #fff;
-}
 
 /* footer */
 #footer {
