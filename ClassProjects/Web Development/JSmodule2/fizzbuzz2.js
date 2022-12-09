@@ -3,7 +3,7 @@ let arr = [];
 function fizzBuzz(arr) {
     if (arr.length === 0) {
         let i = 1
-        while (i > 101) {
+        while (i < 101) {
             if (i % 3 === 0 && i % 5 === 0) {
                 arr.push("Fizzbuzz")
             } else if (i % 3 === 0) {
