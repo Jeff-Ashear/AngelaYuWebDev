@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style140.css">
+    <title>Lesson 140</title>
+</head>
+<body>
+    <h1>Hello.</h1>
+    <br><br>
+    <p">This page is to demonstrate the order in which things happen as the code flows into the Doccument Object Model.  It shows why it is imporatant that links to external files are positioned correctly in html files, as well as why in-line or internal css and js is harder to debug.  For example when the html is read by the browser from top to bottom and there is a link to js that manipulates an element in the head, the js cannot find the element in the DOM if it hasn't been loaded yet.</p>
+    <br><br>
+    <p class="red">Please note that the css link is in the head, while the js link is at the end of the body.  This allows the styles to be loaded as the dom renders, and the functionality to manipulate the elements of the dom after they are present and available.</p>
+
+    <script src="./javascript140.js"></script>
+</body>
+</html>
