@@ -1,1 +1,1 @@
-document.getElementById("#title").innerHTML("Title")
+document.getElementById("title").innerHTML = "Title"
